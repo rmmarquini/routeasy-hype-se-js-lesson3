@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Alterar o id de um elemento</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Alterar o id de um elemento</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Neste cenário, o código existente espera um clique no botão. Quando o botão é clicado, a função <code>changeInput</code> é acionada. 
+            <code>changeInput</code> tenta selecionar um campo de entrada com id <code>inputEl</code>. Porém, o campo de entrada existente não possui esse id. 
+            Edite o código Javascript para adicionar o id <code>inputEl</code> ao campo de entrada existente.
+            <br />
+            <br />
+            <strong>Confira seu código clicando no botão.</strong>
+          </p>
+
+          <pre>
+// Seu código vai aqui
+// ...
+
+const button = document.querySelector('.wrapper button')
+
+const changeInput = () => {
+  const input = document.querySelector('#inputEl');
+  if(input) {
+    console.log(input)
+    input.value = 'Hello World'
+  }
+}
+
+button.addEventListener('click', changeInput)
+          </pre>
+        </div>
+        
+        <input type="text" placeholder="Text" readonly/>
+        <button type="button" id="button">Atualizar ID</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

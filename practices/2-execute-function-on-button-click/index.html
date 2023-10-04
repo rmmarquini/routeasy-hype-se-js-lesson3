@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Executar função ao evento de clique</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Executar função ao evento de clique</h1>
+
+        <div class="text-wrapper">
+          <p>
+            A função Javascript <code>handleText</code> preenche o campo de entrada com a mensagem <strong>Hello Routeasy!</strong>. <br />
+            Porém, não há código para executar esta função. <br />
+            Complete o código existente abaixo de forma que a função seja chamada quando o botão for clicado.
+            <br />
+            <br />
+            <strong>Confira seu código clicando no botão.</strong>
+          </p>
+
+          <pre>
+const button = document.getElementById('button');
+const input = document.getElementById('input');
+
+const handleClick = () => {
+  input.value = 'Hello World';
+};
+
+// seu código aqui
+          </pre>
+        </div>
+
+        <input type="text" id="input" placeholder="A mensagem deve aparecer aqui." readonly/>
+        <button type="button" id="button">Clique aqui</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

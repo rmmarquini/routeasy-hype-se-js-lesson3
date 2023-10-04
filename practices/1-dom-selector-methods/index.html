@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Métodos seletores</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Métodos seletores</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Nesse cenário, o código existente adiciona um <code>eventListener</code> para um evento de clique em uma variável <code>buttonElem</code>. 
+            Ele espera que <code>buttonElem</code> seja o elemento de botão na interface de exemplo. Mas esse elemento ainda não está selecionado.
+            Atribua o elemento HTML à variável <code>buttonElem</code>.
+            <br />
+            <br /> 
+            <strong>Dica:</strong> use o id exclusivo do elemento do botão.
+            <br />
+            <br />
+            <strong>Confira seu código clicando no botão.</strong>
+          </p>
+
+          <pre>
+// Defina corretamente o elemento HTML esperado no seletor abaixo
+const buttonElem = 
+
+buttonElem.addEventListener('click', () => {
+  const oldText = buttonElem.innerText
+
+  if (oldText === 'ON') {
+    buttonElem.classList.remove('on')
+    buttonElem.classList.add('off')
+  }
+
+  if (oldText === 'OFF') {
+    buttonElem.classList.remove('off')
+    buttonElem.classList.add('on')
+  }
+
+  return (button.innerText = oldText === 'ON' ? 'OFF' : 'ON')
+})
+          </pre>
+        </div>
+
+        <button type="button" id="button" class="off">OFF</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

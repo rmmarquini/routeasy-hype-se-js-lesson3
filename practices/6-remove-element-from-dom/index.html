@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Remover elemento do DOM</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Remover elemento do DOM</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Você pode não enxergar, mas na UI de exemplo, abaixo do círculo vermelho há um círculo verde. 
+            Estenda a função <code>removeRedCircle</code> para remover o círculo com id <code>red</code> do DOM.
+            <br />
+            <br />
+            <strong>Certifique-se de realmente remover o elemento em vez de apenas ocultá-lo.</strong>
+            <br />
+            <br />
+            <strong>Confira seu código clicando no botão.</strong>
+          </p>
+
+          <pre>
+const button = document.querySelector('#button');
+
+const removeRedCircle = () => {
+  // Seu código vai aqui
+};
+
+button.addEventListener('click', removeRedCircle);
+          </pre>
+        </div>
+        
+        <div class="content">
+          <div id="red"></div>
+          <div id="green"></div>
+        </div>
+        <button type="button" id="button">Remover</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

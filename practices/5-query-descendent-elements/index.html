@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Consultar elementos descendentes</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Consultar elementos descendentes</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Aqui, o código existente espera que as variáveis <code>buttonElem</code> e <code>inputElem</code> 
+            representem o botão e os elementos de entrada na interface. <br />
+            Atribua os respectivos elementos às variáveis. <br />
+            Neste caso, os dois elementos não possuem identificadores únicos - como por exemplo um id. Em vez disso, 
+            eles são descendentes diretos de um elemento div com classe <code>wrapper</code>. Use um método de seleção apropriado.
+            <br />
+            <br />
+            <strong>Confira seu código clicando no botão.</strong>
+          </p>
+
+          <pre>
+// Atribua o elemento HTML correto para as variáveis abaixo
+const buttonElem = 
+const inputElem = 
+
+buttonElem.addEventListener('click', () => {
+  const oldText = inputElem.value;
+
+  if (oldText === 'ON') {
+    inputElem.classList.remove('on')
+    inputElem.classList.add('off')
+  }
+
+  if (oldText === 'OFF') {
+    inputElem.classList.remove('off')
+    inputElem.classList.add('on')
+  }
+
+  return inputElem.value = oldText === "ON" ? "OFF" : "ON";
+});
+          </pre>
+        </div>
+
+        <input type="text" value="OFF" class="off" readonly/>
+        <button type="button">Verificar</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Cursor é movido sobre e fora de elemento</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Cursor é movido sobre e fora de elemento</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Neste cenário queremos que a cor do círculo mude dependendo do tipo de movimento do cursor. Use a função 
+            <code>toggleColor</code> para tornar o círculo laranja quando o cursor se move sobre ele. Reutilize a 
+            mesma função para torná-la preta quando o cursor sair dela.
+            A parte complicada é que você precisa chamar <code>toggleColor</code> com valores diferentes para o 
+            parâmetro <code>isEntering</code>. 
+            <br />
+            <br />
+            <strong>Verifique se seu código está funcionando passando o cursor do mouse sobre o círculo e saindo dele 
+              novamente.</strong>
+          </p>
+
+          <pre>
+const element = document.querySelector('#element');
+
+const toggleColor = (isEntering) => {
+  element.style.background = isEntering ? 'orange' : 'black';
+};
+
+// Seu código vai aqui
+          </pre>
+        </div>
+
+        <div id="element">
+          <p>Hover me!</p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

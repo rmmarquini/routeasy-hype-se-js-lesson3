@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Selecionar e excluir elementos</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Selecionar e excluir elementos</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Neste cenário, você precisa consultar todos os itens que pertencem à
+            lista com o ID <code>list</code>. Mas, exclua aqueles com id
+            <code>disabled</code>. Atribua esses itens à variável 'listItems'
+            usando um método de seletor apropriado. Depois de completar o código
+            abaixo, verifique-o clicando no botão. Os respectivos itens deverão
+            sofrer alteração de texto.
+            <br />
+            <br />
+            <strong>Confirme seu código clicando no botão!</strong>
+          </p>
+
+          <pre>
+// Atribua o elemento HTML correto para a variável 'listItems'
+const listItems = 
+
+const button = document.getElementById('button');
+
+const handleClick = () => {
+  listItems.forEach(item => {
+  const oldText = item.innerText;
+    return item.innerText = oldText === 'ON' ? 'OFF' : 'ON';
+  })
+};
+if(listItems.length > 1) {
+  button.addEventListener('click', handleClick);
+}
+          </pre>
+        </div>
+
+        <ul id="list">
+          <li>OFF</li>
+          <li>OFF</li>
+          <li>OFF</li>
+          <li id="disabled">OFF</li>
+          <li>OFF</li>
+          <li>OFF</li>
+          <li id="disabled">OFF</li>
+          <li>OFF</li>
+        </ul>
+        <button type="button" id="button">Verificar</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

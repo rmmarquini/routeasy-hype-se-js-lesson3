@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+  --routeasy-primary: #3cbc8d;
+  --routeasy-black: #1c1c1f;
+  --routeasy-white: #f2f2f2;
+  --routeasy-primary-light: #6ee2b8;
+  --routeasy-secondary: #00b9b9;
+  --routeasy-secondary-light: #59dddd;
+  --routeasy-nstech: #ff3d03;
+
+  --color-bg-primary: #1c1c1f;
+  --color-bg-secondary: #1f2223;
+
+  --color-input-border: #21262d;
+  --color-divider-border: #323232;
+
+  --color-btn-primary-text: #fff;
+  --color-btn-primary-bg: #238636;
+  --color-btn-primary-border: #2ea043;
+  --color-btn-primary-hover-bg: #2ea043;
+  --color-btn-primary-hover-border: #3fb950;
+  --color-btn-danger-text: #f85149;
+  --color-btn-danger-bg: #b62324;
+  --color-btn-danger-hover-text: #fff;
+  --color-btn-danger-hover-bg: #da3633;
+  --color-btn-danger-hover-border: #f85149;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg-secondary);
+  color: var(--routeasy-white);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  overflow-x: hidden;
+}
+
+a,
+a:visited,
+a:active {
+  color: var(--routeasy-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: var(--routeasy-secondary-light);
+}
+
+strong {
+  color: var(--routeasy-primary);
+}
+
+code {
+  color: var(--routeasy-nstech);
+  font-size: 1.1em;
+}
+
+input {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.625;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-input-border);
+  background: var(--routeasy-white);
+  color: var(--routeasy-black);
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.625;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-btn-primary-border);
+  background: var(--color-btn-primary-bg);
+  color: var(--routeasy-white);
+  cursor: pointer;
+  width: 150px;
+}
+
+button:hover {
+  background: var(--color-btn-primary-hover-bg);
+  border: 1px solid var(--color-btn-primary-hover-border);
+}
+
+pre {
+  padding: 2rem;
+  background: var(--routeasy-white);
+  color: var(--routeasy-black);
+}
+
+.divider {
+  background: var(--color-divider-border);
+  margin: 0.5rem auto;
+  height: 1px;
+  width: 90%;
+}

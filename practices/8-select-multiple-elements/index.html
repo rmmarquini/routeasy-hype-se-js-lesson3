@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Selecionar múltiplos elementos</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Selecionar múltiplos elementos</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Neste cenário, procuramos uma lista de elementos reunidos em uma variável - em vez de apenas um elemento. <br />
+            Atribua os itens da lista na visualização à variável <code>listItems</code> usando um método de seletor apropriado. <br /><br />
+            <strong>Plus: </strong> Adicione, também, uma funcionalidade que altere as cores dos itens da lista quando o mouse passar sobre eles.<br /><br />
+            Depois de completar o código abaixo, verifique-o <strong>passando o mouse sobre os itens da lista</strong> até que todos os itens tenham o valor "ON"
+          </p>
+
+          <pre>
+// Atribua o elemento HTML correto para a variável abaixo
+const listItems = 
+
+const handleHover = (event) => {
+  // Adicione uma funcionalidade que altere as cores dos itens da lista quando o mouse passar por cima
+  // Dica: interprete o arquivo CSS para saber qual classe utilizar
+
+  return event.target.innerText = 'ON'
+}
+
+if (listItems.length > 1) {
+  listItems.forEach(item => item.addEventListener('mouseover', handleHover))
+}
+          </pre>
+        </div>
+
+        <ul id="list">
+          <li class="off">OFF</li>
+          <li class="off">OFF</li>
+          <li class="off">OFF</li>
+          <li class="off">OFF</li>
+          <li class="off">OFF</li>
+          <li class="off">OFF</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Incrementar o contador</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Incrementar o contador</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Estenda o código JavaScript do arquivo <code>script.js</code> para
+            interagir com os elementos HTML exibidos.
+            <br />
+            <br />
+            A cada clique no botão exibido, some o valor em mais 1.
+            <br />
+            <br />
+            <strong>Dica: </strong>Vale lembrar que o número contido no botão é
+            uma String. Por isso, pesquise sobre a função
+            <code>parseInt()</code> do JS.
+            <br />
+            <br />
+            <strong>Confirme seu código clicando no botão!</strong>
+          </p>
+
+          <pre>
+const button = document.getElementById('button');
+button.addEventListener('click' , () => {
+  // seu código vai aqui
+
+})
+          </pre>
+        </div>
+
+        <button type="button" id="button">0</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

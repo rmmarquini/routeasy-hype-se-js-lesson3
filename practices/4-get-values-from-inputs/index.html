@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Recuperar conteúdo de input</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Recuperar conteúdo de input</h1>
+
+        <div class="text-wrapper">
+          <p>
+            Estenda o código JavaScript do arquivo <code>script.js</code> para
+            interagir com os elementos HTML exibidos.
+            <br />
+            Desta vez procuramos o nome completo, assim quando o botão
+            <code>Verificar</code> for clicado, combine os nomes dos dois
+            primeiros campos de entrada.
+            <br />
+            Insira o nome completo no terceiro campo de entrada.
+            <br /><br />
+            <strong>Dica:</strong> verifique se o seu código ainda funciona se
+            você alterar o nome ou sobrenome. <br />
+            <strong>Plus:</strong> limpe os campos, clicando no botão
+            <code>Limpar</code> e retorne os inputs para o valor inicial.
+            <br />
+            <br />
+            <strong>Confirme seu código clicando no botão!</strong>
+          </p>
+
+          <pre>
+const verifyBtn = document.getElementById('verify')
+const clearBtn = document.getElementById('clear')
+verifyBtn.addEventListener('click', function() {
+  // seu código vai aqui
+})
+
+clearBtn.addEventListener('click', () => {
+  // seu código vai aqui
+})
+          </pre>
+        </div>
+
+        <input type="text" id="firstName" placeholder="Max" value="Max" />
+        <input
+          type="text"
+          id="lastName"
+          placeholder="Musterman"
+          value="Musterman"
+        />
+        <input type="text" id="fullName" placeholder="full name" readonly />
+        <button type="button" id="verify">Verificar</button>
+        <button type="reset" id="clear">Limpar</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

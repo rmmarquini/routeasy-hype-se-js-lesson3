@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[HYPE-SE] JS: Envolver elemento em uma div</title>
+
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="../../global-pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="/">&lt;&lt; Voltar para a Home</a>
+        <h1>Envolver elemento em uma div</h1>
+
+        <div class="text-wrapper">
+          <p>
+            O código JavaScript abaixo prepara um <code>eventListener</code> em uma variável <code>btn</code>. 
+            Um elemento filho atribuído como um botão descende de outro elemento com id <code>wrapper</code>. 
+            À este botão foi atribuído à variável <code>btn</code>. <br />
+            Porém, o elemento de botão existente não possui nenhum nó pai com <code>wrapper</code> de id. <br />
+            Faça o código funcionar criando um novo elemento com id <code>wrapper</code> que envolve o elemento de 
+            botão existente. 
+            <br />
+            <br />
+            <strong>Dica:</strong> talvez seja necessário usar os seguintes métodos: <code>querySelector</code>, 
+            <code>createElement</code>, <code>setAttribute</code>, <code>append</code>.
+            <br />
+            <br />
+            <strong>Confira seu código clicando no botão.</strong>
+          </p>
+
+          <pre>
+// seu código aqui
+
+
+// se espera que btn seja filho do elemento com id 'wrapper'
+const btn = document.querySelector('#wrapper button');
+
+if(btn) {
+  const handleClick = () => {
+    btn.innerText = 'Thank you! ❤️'
+  }
+  btn.addEventListener('click', handleClick)
+}
+          </pre>
+        </div>
+        
+        <button type="button" id="button">Click Me</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

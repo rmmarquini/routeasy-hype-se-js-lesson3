@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1.5rem;
+}
+
+.text-wrapper {
+  width: 50vw;
+  height: auto;
+  text-align: justify;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
