@@ -1,6 +1,6 @@
 // Atribua o elemento HTML correto para as variáveis abaixo
-const buttonElem = 
-const inputElem = 
+const buttonElem = document.querySelector('.wrapper button')
+const inputElem = document.querySelector('.wrapper input')
 
 buttonElem.addEventListener('click', () => {
   const oldText = inputElem.value;

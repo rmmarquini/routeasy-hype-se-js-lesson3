@@ -6,3 +6,4 @@ const handleClick = () => {
 };
 
 // seu código aqui
+document.addEventListener('click', handleClick)

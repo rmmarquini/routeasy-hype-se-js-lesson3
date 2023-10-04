@@ -1,5 +1,5 @@
 // Defina corretamente o elemento HTML esperado no seletor abaixo
-const buttonElem = 
+const buttonElem = document.querySelector(".wrapper button")
 
 buttonElem.addEventListener('click', () => {
   const oldText = buttonElem.innerText

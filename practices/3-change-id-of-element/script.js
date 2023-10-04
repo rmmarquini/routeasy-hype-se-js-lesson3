@@ -1,5 +1,7 @@
 // Seu código vai aqui
-// ...
+const elem = document.querySelector(".wrapper input[type='text']")
+elem.setAttribute('id', 'inputEl')
+
 
 const button = document.querySelector('.wrapper button')
 
